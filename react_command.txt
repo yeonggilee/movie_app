@@ -1,0 +1,11 @@
+node.js ¼³Ä¡
+
+npm install -g create-react-app
+create-react-app movie_app
+cd movie_app
+npm start
+
+npm install prop-types
+npm install react-lines-ellipsis
+
+npm run-script build
