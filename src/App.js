@@ -105,8 +105,8 @@ class App extends Component {
     //JSON: JavaScript Object Notation
     //promise: scenario
     return fetch('https://yts.am/api/v2/list_movies.json?sort_by=download_count')
-    .then(response => response.json()) //return is included in 'arrow function'(but 'this.state' isn't)
-    .then(json => json.data.movies)
+    .then(response => response.json()) //return is included
+    .then(json => json.data.movies) 
     .catch(err => console.log(err))
   };
 
@@ -118,6 +118,7 @@ class App extends Component {
     */
     const movies = this.state.movies.map(movie => {
       //console.log(movie)
+      //console.log(typeof(movie))
       return (
         <Movie 
         title={movie.title_english} 
@@ -129,7 +130,7 @@ class App extends Component {
       );
     });
     return movies
-  }
+  };
 
   render() {
     //console.log('did render')
