@@ -1,5 +1,3 @@
-node.js ¼³Ä¡
-
 npm install -g create-react-app
 create-react-app movie_app
 cd movie_app
